@@ -1,0 +1,328 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* COLORES DEL PDF */
+:root {
+  --bg-main: #F2ECEC;       /* fondo */
+  --text-main: #2f3e3a;     /* texto principal */
+  --text-soft: #6f7f7a;
+  --btn-bg: #ffffff;
+  --btn-border: #c9c2c2;
+}
+/*CAA4A3
+A6B6A9
+5B6E6C
+*/
+
+/* TIPOGRAFÍAS */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bg-main);
+  color: var(--text-main);
+}
+
+/* TITULARES */
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 400;
+}
+.hero {
+  min-height: 100vh;
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/*.hero-image {
+  position: relative;
+  height: 45vh;
+  background-image: url("../img/joana.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 4px;
+}*/
+.hero-image {
+  width: 100%;
+  max-width: 450px;
+  height: 420px;
+
+  margin: 0 auto;
+
+  background-image: url("../img/joana.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  border-radius: 4px;
+}
+
+.hero-text {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 1.5rem;
+}
+
+.hero-hello {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+/*.hero-actions {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}*/
+
+.hero-actions {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;   /* CLAVE */
+  gap: 1.2rem;
+}
+
+/*.hero-btn {
+  text-decoration: none;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--btn-border);
+  background-color: var(--btn-bg);
+  color: var(--text-main);
+  text-align: center;
+  font-size: 0.95rem;
+}*/
+/*.hero-btn {
+  display: inline-block;
+
+  font-family: 'Inter', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+
+  color: var(--text-main);
+  background-color: var(--btn-bg);
+
+  padding: 0.6rem 1.6rem;
+
+  border: 1px solid var(--btn-border);
+  border-radius: 2px;
+
+  text-decoration: none;
+  text-align: center;
+
+  width: auto;
+  max-width: 320px;
+}*/
+
+.hero-btn {
+  display: inline-block;
+
+  font-family: 'Inter', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 500;
+
+  color: #ffffff;
+  text-decoration: none;
+
+  padding: 0.9rem 2.2rem;
+
+  border-radius: 999px;  /* clave: forma tipo pastilla */
+  text-align: center;
+
+  width: auto;
+  max-width: fit-content;
+
+  line-height: 1.2;
+}
+.btn-familias {
+  background-color: #CAA4A3;
+}
+
+.btn-terapia {
+  background-color: #A6B6A9;
+}
+
+.btn-formacion {
+  background-color: #5B6E6C;
+}
+.hero-btn {
+  position: relative;
+}
+
+.hero-btn::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: inherit;
+  border-radius: 999px;
+  filter: blur(0.5px);
+  z-index: -1;
+}
+
+.hero-signature {
+  margin-top: 2.5rem;
+  text-align: center;
+}
+
+.hero-signature img {
+  max-width: 180px;
+  margin-bottom: 0.5rem;
+}
+
+.signature-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.1rem;
+}
+
+.signature-role {
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  color: var(--text-soft);
+}
+
+/* ===============================
+   PÁGINAS DE SERVICIO
+================================ */
+
+.service-hero {
+  background-color: #C9ACA6;
+  padding: 2.5rem 1.5rem 3rem;
+}
+
+.service-hero-image {
+  width: 100%;
+  max-width: 520px;
+  height: 260px;
+
+  margin: 0 auto -4rem;
+
+  background-image: url("../img/asesoramiento.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 6px;
+}
+
+.service-hero-content {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.service-eyebrow {
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  color: var(--text-soft);
+  margin-bottom: 1rem;
+}
+
+.service-hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  font-weight: 400;
+}
+
+.service-content {
+  background-color: #C9ACA6;
+  padding: 3rem 1.5rem;
+}
+
+.service-text {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #ffffff;
+}
+
+.service-text p {
+  margin-bottom: 1.5rem;
+}
+
+.service-text ul {
+  margin: 2rem 0;
+  padding-left: 1.2rem;
+}
+
+.service-text li {
+  margin-bottom: 0.75rem;
+}
+
+.service-footer {
+  text-align: center;
+  padding: 2rem;
+  background-color: #C9ACA6;
+}
+
+.service-footer a {
+  text-decoration: none;
+  color: var(--text-main);
+  font-size: 0.9rem;
+}
+
+/* Bloques de texto destacados */
+
+.highlight-box {
+  background-color: #ffffff;
+  border-radius: 12px;
+
+  padding: 1.5rem;
+  margin: 2rem 0;
+
+  font-family: 'Inter', sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.6;
+
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+/* Checklist */
+
+.checklist {
+  list-style: none;
+  margin: 2rem 0;
+  padding: 0;
+}
+
+.checklist li {
+  position: relative;
+  padding-left: 2rem;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+/* círculo + check */
+.checklist li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  width: 1.3rem;
+  height: 1.3rem;
+
+  background-color: #ffffff;
+  color: #A6B6A9;
+
+  border-radius: 50%;
+  font-size: 0.95rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Firma final */
+
+.service-signature {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.service-signature img {
+  max-width: 220px;
+  opacity: 0.9;
+}
