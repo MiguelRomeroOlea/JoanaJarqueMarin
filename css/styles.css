@@ -266,8 +266,9 @@ h1 {
 
 /* Bloques de texto destacados */
 
-.highlight-box {
+/*.highlight-box {
   background-color: #ffffff;
+  color: #945C5B;
   border-radius: 12px;
 
   padding: 1.5rem;
@@ -278,7 +279,33 @@ h1 {
   line-height: 1.6;
 
   box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}*/
+.highlight-box {
+  position: relative;
+  display: inline;
+
+  font-weight: 500;
+  color: #945C5B;
+
+  padding: 0 0.15em;
 }
+.highlight-box::after {
+  content: "";
+  position: absolute;
+
+  left: 0;
+  right: 0;
+  bottom: -0.15em;
+
+  height: 0.6em;
+
+  background-color: #ffffff;
+  opacity: 0.35;
+
+  border-radius: 6px;
+  z-index: -1;
+}
+
 /* Checklist */
 
 .checklist {
