@@ -260,7 +260,7 @@ h1 {
 
 .service-footer a {
   text-decoration: none;
-  color: var(--text-main);
+  color: #ffffff;
   font-size: 0.9rem;
 }
 
@@ -280,16 +280,67 @@ h1 {
 
   box-shadow: 0 2px 8px rgba(0,0,0,0.04);
 }*/
-.highlight-box {
+.highlight-box-white {
   position: relative;
   display: inline;
 
-  font-weight: 500;
+  font-weight: 600;
   color: #945C5B;
-
+  background-color: #ffffff;
   padding: 0 0.15em;
+  border-radius: 999px;
+  
 }
-.highlight-box::after {
+
+.highlight-box-green {
+  position: relative;
+  display: inline;
+
+  font-weight: 600;
+  background-color: #A6B6A9;
+  color: #ffffff;
+  padding: 0 0.15em;
+  border-radius: 999px;
+  
+}
+
+.highlight-box-sgreen {
+  position: relative;
+  display: inline;
+
+  font-weight: 600;
+  background-color: #5B6E6C;
+  color: #ffffff;
+  padding: 0 0.15em;
+  border-radius: 999px;
+  
+}
+
+.highlight-box-pink {
+  position: relative;
+  display: inline;
+
+  font-weight: 600;
+  background-color: #C9ACA6;
+  color: #ffffff;
+  padding: 0 0.15em;
+  border-radius: 999px;
+  
+}
+
+.highlight-box-spink {
+  position: relative;
+  display: inline;
+
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #945C5B;
+  padding: 0 0.15em;
+  border-radius: 999px;
+  
+}
+
+/*.highlight-box::after {
   content: "";
   position: absolute;
 
@@ -302,9 +353,9 @@ h1 {
   background-color: #ffffff;
   opacity: 0.35;
 
-  border-radius: 6px;
+  border-radius: 999px;
   z-index: -1;
-}
+}*/
 
 /* Checklist */
 
@@ -316,14 +367,14 @@ h1 {
 
 .checklist li {
   position: relative;
-  padding-left: 2rem;
+  padding-left: 2.4rem;
   margin-bottom: 1rem;
   line-height: 1.5;
 }
 
 /* círculo + check */
 .checklist li::before {
-  content: "✓";
+  content: "✔";
   position: absolute;
   left: 0;
   top: 0;
@@ -335,13 +386,26 @@ h1 {
   color: #A6B6A9;
 
   border-radius: 50%;
-  font-size: 0.95rem;
+  /*font-size: 0.95rem;
+  font-weight: 8000;*/
 
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+/* Letra Caveat */
+.handwritten-text {
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 1rem;
+  font-weight: 800;
+
+  color: #ffffff;
+
+  text-align: center;
+  line-height: 1.4;
+  letter-spacing: 0.1em;
+}
 /* Firma final */
 
 .service-signature {
