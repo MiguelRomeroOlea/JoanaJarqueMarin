@@ -187,7 +187,7 @@ h1 {
 }
 
 /* ===============================
-   PÁGINAS DE SERVICIO
+   PÁGINA DE FAMILIA
 ================================ */
 
 .service-hero {
@@ -259,6 +259,43 @@ h1 {
 }
 
 .service-footer a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 0.9rem;
+}
+
+/* ===============================
+   PÁGINA DE TERAPIA
+================================ */
+
+.service-hero-terapia {
+  background-color: #A6B6A9;
+  padding: 2.5rem 1.5rem 3rem;
+}
+
+.service-hero-imageTerapia {
+  width: 100%;
+  max-width: 520px;
+  height: 300px;
+
+  margin: 0 auto -3rem;
+
+  background-image: url("../img/terapia.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 6px;
+}
+.service-content-terapia {
+  background-color: #A6B6A9;
+  padding: 3rem 1.5rem;
+}
+
+.service-footer-terapia {
+  text-align: center;
+  padding: 2rem;
+  background-color: #A6B6A9;
+}
+.service-footer-terapia a {
   text-decoration: none;
   color: #ffffff;
   font-size: 0.9rem;
