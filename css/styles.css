@@ -301,6 +301,43 @@ h1 {
   font-size: 0.9rem;
 }
 
+/* ===============================
+   PÁGINA DE FORMACION
+================================ */
+
+.service-hero-formacion {
+  background-color: #5B6E6C;
+  padding: 2.5rem 1.5rem 3rem;
+}
+
+.service-hero-imageFormacion {
+  width: 100%;
+  max-width: 600px;
+  height: 300px;
+
+  margin: 0 auto -3rem;
+
+  background-image: url("../img/formacion.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 6px;
+}
+.service-content-formacion {
+  background-color: #5B6E6C;
+  padding: 3rem 1.5rem;
+}
+
+.service-footer-formacion {
+  text-align: center;
+  padding: 2rem;
+  background-color: #5B6E6C;
+}
+.service-footer-formacion a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 0.9rem;
+}
+
 /* Bloques de texto destacados */
 
 /*.highlight-box {
@@ -446,11 +483,44 @@ h1 {
 /* Firma final */
 
 .service-signature {
-  margin-top: 3rem;
+  margin-top: 0rem;
   text-align: center;
 }
 
 .service-signature img {
+  max-width: 220px;
+  opacity: 0.9;
+}
+
+.service-signature-spink {
+  margin-top: 0rem;
+  text-align: center;
+  background-color: #C9ACA6;
+}
+
+.service-signature-spink img {
+  max-width: 220px;
+  opacity: 0.9;
+}
+
+.service-signature-sgreen {
+  margin-top: 0rem;
+  text-align: center;
+  background-color: #5B6E6C;
+}
+
+.service-signature-sgreen img {
+  max-width: 220px;
+  opacity: 0.9;
+}
+   
+.service-signature-green {
+  margin-top: 0rem;
+  text-align: center;
+  background-color: #A6B6A9;
+}
+
+.service-signature-green img {
   max-width: 220px;
   opacity: 0.9;
 }
