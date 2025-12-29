@@ -480,6 +480,24 @@ h1 {
   line-height: 1.4;
   letter-spacing: 0.1em;
 }
+/* Letra Caveat fondo rosa*/
+.handwritten-text-spink {
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 1rem;
+  font-weight: 800;
+  position: relative;
+  display: inline-block;      /* 🔑 clave */
+  width: fit-content;         /* 🔑 se ajusta al texto */
+
+  color: #ffffff;
+  background-color: #945C5B;
+
+  text-align: center;
+  line-height: 1.4;
+  letter-spacing: 0.1em;
+  padding: 0 0.15em;
+  border-radius: 999px;
+}
 /* Firma final */
 
 .service-signature {
@@ -523,4 +541,124 @@ h1 {
 .service-signature-green img {
   max-width: 220px;
   opacity: 0.9;
+}
+
+/* ===============================
+   GALERÍA TERAPIA ONLINE
+================================ */
+
+.image-grid {
+  max-width: 900px;
+  margin: 3rem auto;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.2rem;
+  background-color: #5B6E6C;
+  padding: 0 1.5rem;
+}
+
+.image-grid img {
+  width: 100%;
+  height: auto;
+
+  display: block;
+
+  border-radius: 18px;   /* bordes suavizados */
+  object-fit: cover;
+
+}
+/* ===============================
+   GALERÍA TERAPIA ONLINE MOVIL
+================================ */
+@media (max-width: 600px) {
+  .image-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ===============================
+   SOBRE MI
+================================ */
+.service-hero-aboutme {
+  background-color: #F2ECEC;
+  padding: 2.5rem 1.5rem 3rem;
+}
+
+.service-hero-imageAboutme {
+  width: 100%;
+  max-width: 620px;
+  height: 200px;
+
+  margin: 0 auto -3rem;
+
+  background-image: url("../img/sobreMi.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 6px;
+}
+
+.service-hero-imagemyCarreer {
+  width: 100%;
+  max-width: 620px;
+  height: 200px;
+
+  margin: 0 auto -3rem;
+
+  background-image: url("../img/miRecorrido.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 6px;
+}
+
+.service-hero-imagemyCV {
+  width: 100%;
+  max-width: 620px;
+  height: 200px;
+
+  margin: 0 auto -3rem;
+
+  background-image: url("../img/miFormacion.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 6px;
+}
+.service-content-aboutme {
+  background-color: #F2ECEC;
+
+  padding: 3rem 1.5rem;
+}
+.service-text-aboutme {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #945C5B;
+}
+
+.service-text-aboutme p {
+  margin-bottom: 1.5rem;
+}
+
+.service-text-aboutme ul {
+  margin: 2rem 0;
+  padding-left: 1.2rem;
+}
+
+.service-text-aboutme li {
+  margin-bottom: 0.75rem;
+}
+
+.service-footer-aboutme {
+  text-align: center;
+  padding: 2rem;
+  background-color: #F2ECEC;
+}
+.service-footer-aboutme a {
+  text-decoration: none;
+  color: #945C5B;
+  font-size: 0.9rem;
 }
