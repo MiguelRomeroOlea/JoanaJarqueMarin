@@ -662,3 +662,25 @@ h1 {
   color: #945C5B;
   font-size: 0.9rem;
 }
+
+/* Redes sociales */
+
+.social-links {
+  margin-top: 1.5rem;
+
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+}
+
+.social-links img {
+  width: 22px;
+  height: 22px;
+
+  opacity: 0.7;
+  transition: opacity 0.2s ease;
+}
+
+.social-links img:hover {
+  opacity: 1;
+}
