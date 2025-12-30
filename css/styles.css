@@ -218,6 +218,7 @@ h1 {
 
   background-image: url("../img/asesoramiento.jpg");
   background-size: contain;
+  background-repeat: no-repeat;
   background-position: center;
   border-radius: 6px;
 }
@@ -296,6 +297,7 @@ h1 {
 
   background-image: url("../img/terapia.jpg");
   background-size: contain;
+  background-repeat: no-repeat;
   background-position: center;
   border-radius: 6px;
 }
@@ -333,6 +335,7 @@ h1 {
 
   background-image: url("../img/formacion.jpg");
   background-size: contain;
+  background-repeat: no-repeat;
   background-position: center;
   border-radius: 6px;
 }
